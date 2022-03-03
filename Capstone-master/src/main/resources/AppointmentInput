@@ -1,0 +1,38 @@
+###
+POST http://localhost:8080/appointments/appointments
+Content-Type: application/json
+
+{
+    "appointmentId":"1",
+    "doctorId": "UUID-11",
+    "doctorName": "Ocean",
+    "userId":"1",
+    "userName":"Rucha",
+    "userEmailId": "abc@gmail.com",
+    "timeSlot":"1pm-2pm",
+    "appointmentDate":"06-02-2022"
+}
+
+###
+POST http://localhost:8080/doctors
+Content-Type: application/json
+
+{
+  "firstName":"Doctor",
+  "lastName": "Ambulgekar",
+  "address":{
+    "id":"1",
+    "addressLine1": "addressLine1",
+    "addressLine2": "addressLine2",
+    "city": "Pune",
+    "state":"MH",
+    "postcode":"431605"
+  },
+  "mobile":"1234567890",
+  "emailId":"Hemant@gmail.com",
+  "pan":"ABCDE1234F",
+  "highestQualification": "MBBS",
+  "totalYearsOfExp": 15,
+  "rating": 4.3,
+  "dob":"1959-01-01"
+}
